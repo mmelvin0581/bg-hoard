@@ -11,7 +11,7 @@ export default function (schema: Schematic): Rule {
       name: `util-${schema.name}`,
       linter: 'tslint',
       directory: schema.directory,
-      tags: `type:util', scope:${schema.directory}`,
+      tags: `type:util, scope:${schema.directory}`,
     }),
   ]);
 }

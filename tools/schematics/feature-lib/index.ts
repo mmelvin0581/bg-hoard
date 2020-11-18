@@ -4,6 +4,9 @@ export default function (schema: any): Rule {
   return chain([
     externalSchematic('@nrwl/workspace', 'lib', {
       name: schema.name,
+      linter: 'tslint',
+      directory: schema.directory,
+      tags: `type:feature', scope:${schema.directory}`,
     }),
   ]);
 }
