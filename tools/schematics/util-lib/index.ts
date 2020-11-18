@@ -1,11 +1,7 @@
 import { chain, externalSchematic, Rule } from '@angular-devkit/schematics';
+import { SchematicOptions } from './schema';
 
-interface Schematic {
-  name: string;
-  directory: string;
-}
-
-export default function (schema: Schematic): Rule {
+export default function (schema: SchematicOptions): Rule {
   return chain([
     externalSchematic('@nrwl/workspace', 'lib', {
       name: `util-${schema.name}`,
