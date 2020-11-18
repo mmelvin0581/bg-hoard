@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "projects": {
     "store": {
       "projectType": "application",
@@ -21,7 +21,10 @@
             "polyfills": "apps/store/src/polyfills.ts",
             "tsConfig": "apps/store/tsconfig.app.json",
             "aot": true,
-            "assets": ["apps/store/src/favicon.ico", "apps/store/src/assets"],
+            "assets": [
+              "apps/store/src/favicon.ico",
+              "apps/store/src/assets"
+            ],
             "styles": [
               "apps/store/src/styles.scss",
               "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css"
@@ -85,7 +88,10 @@
               "apps/store/tsconfig.spec.json",
               "apps/store/tsconfig.editor.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/store/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/store/**/*"
+            ]
           }
         },
         "test": {
@@ -118,8 +124,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/store-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/store-e2e/**/*"]
+            "tsConfig": [
+              "apps/store-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/store-e2e/**/*"
+            ]
           }
         }
       }
@@ -138,7 +149,10 @@
               "libs/store/ui-shared/tsconfig.spec.json",
               "libs/store/ui-shared/.storybook/tsconfig.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/store/ui-shared/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/store/ui-shared/**/*"
+            ]
           }
         },
         "test": {
@@ -259,7 +273,9 @@
             "outputPath": "dist/apps/api",
             "main": "apps/api/src/main.ts",
             "tsConfig": "apps/api/tsconfig.app.json",
-            "assets": ["apps/api/src/assets"]
+            "assets": [
+              "apps/api/src/assets"
+            ]
           },
           "configurations": {
             "production": {
@@ -288,7 +304,10 @@
               "apps/api/tsconfig.app.json",
               "apps/api/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/api/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/api/**/*"
+            ]
           }
         },
         "test": {
@@ -313,7 +332,10 @@
               "libs/util-interface/tsconfig.lib.json",
               "libs/util-interface/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/util-interface/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/util-interface/**/*"
+            ]
           }
         },
         "test": {
@@ -346,8 +368,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/store-ui-shared-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/store-ui-shared-e2e/**/*"]
+            "tsConfig": [
+              "apps/store-ui-shared-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/store-ui-shared-e2e/**/*"
+            ]
           }
         }
       }
