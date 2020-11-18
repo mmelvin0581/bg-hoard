@@ -20,8 +20,8 @@ const games = [
     rating: Math.random(),
   },
   {
-    id: 'purrfection',
-    name: 'Purrfection',
+    id: 'purrrrrfection',
+    name: 'Purrrrrfection',
     image: '/assets/cat.png', // 'https://media.giphy.com/media/12xMvwvQXJNx0k/giphy.gif',
     description: 'A cat grooming contest goes horribly wrong.',
     price: 45,
