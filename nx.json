@@ -53,6 +53,9 @@
     },
     "api-util-notifications": {
       "tags": ["type:util", "scope:api"]
+    },
+    "api-feature-notifications": {
+      "tags": ["type:feature'", "scope:api"]
     }
   }
 }

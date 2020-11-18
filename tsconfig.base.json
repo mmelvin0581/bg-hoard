@@ -26,6 +26,9 @@
       "@bg-hoard/util-interface": ["libs/util-interface/src/index.ts"],
       "@bg-hoard/api/util-notifications": [
         "libs/api/util-notifications/src/index.ts"
+      ],
+      "@bg-hoard/api/feature-notifications": [
+        "libs/api/feature-notifications/src/index.ts"
       ]
     }
   },
